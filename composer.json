@@ -5,8 +5,8 @@
 	"authors": [
 		{
 			"homepage": "author-url",
-			"email": "author-email"
-			"name": "author-name",
+			"email": "author-email",
+			"name": "author-name"
 		}
 	],
 	"minimum-stability": "dev",
