@@ -1,8 +1,26 @@
 {
 	"name": "author/your-project",
 	"description": "project-description",
+	"version": "1.0.0",
+	"authors": [
+		{
+			"name": "author",
+			"homepage": "author-url",
+			"email": "author-email"
+		}
+	],
 	"minimum-stability": "dev",
 	"prefer-stable": true,
+	"scripts": {
+		"lint": "vendor/bin/phpcs --standard=phpcs.xml wp-content/themes/sc-starter-theme",
+		"lint:fix": "vendor/bin/phpcbf --standard=phpcs.xml wp-content/themes/sc-starter-theme",
+		"sniff": "vendor/bin/phpstan analyse --memory-limit 1G",
+		"post-install-cmd": [
+			"patch -N ./vendor/php-stubs/wp-cli-stubs/wp-cli-stubs.php < ./patches/wp-cli-stubs-php82.patch || true",
+			"patch -N ./vendor/php-stubs/wp-cli-stubs/wp-cli-commands-stubs.php < ./patches/wp-cli-commands-stubs-php82.patch || true",
+			"vendor/bin/generate-stubs wp-content/themes/sc-starter-theme/vendor/timber --out=vendor/php-stubs/timber-stubs/timber-stubs.php --force"
+		]
+	},
 	"require-dev": {
 		"wp-coding-standards/wpcs": "^3.0",
 		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
@@ -16,16 +34,6 @@
 		"composer/composer": "^2.7",
 		"php-di/php-di": "^7.0",
 		"timber/timber": "^2.0"
-	},
-	"scripts": {
-		"lint": "vendor/bin/phpcs --standard=phpcs.xml wp-content/themes/sc-starter-theme",
-		"lint:fix": "vendor/bin/phpcbf --standard=phpcs.xml wp-content/themes/sc-starter-theme",
-		"sniff": "vendor/bin/phpstan analyse --memory-limit 1G",
-		"post-install-cmd": [
-			"patch -N ./vendor/php-stubs/wp-cli-stubs/wp-cli-stubs.php < ./patches/wp-cli-stubs-php82.patch || true",
-			"patch -N ./vendor/php-stubs/wp-cli-stubs/wp-cli-commands-stubs.php < ./patches/wp-cli-commands-stubs-php82.patch || true",
-			"vendor/bin/generate-stubs wp-content/themes/sc-starter-theme/vendor/timber --out=vendor/php-stubs/timber-stubs/timber-stubs.php --force"
-		]
 	},
 	"config": {
 		"platform": {
