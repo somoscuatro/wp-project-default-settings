@@ -24,9 +24,9 @@ files_to_update=(
 for file in "${files_to_update[@]}"; do
   if [[ -f "$file" ]]; then
     if [[ "$file" == "style.css" ]]; then
-      sed -i '' -E "s/(Version: )[0-9]+\.[0-9]+\.[0-9]+/\1$new_version/" "$file"
+      sed -i -E "s/(Version: )[0-9]+\.[0-9]+\.[0-9]+/\1$new_version/" "$file"
     else
-      sed -i '' -E "s/(\"version\": \")[0-9]+\.[0-9]+\.[0-9]+\"/\1$new_version\"/" "$file"
+      sed -i -E "s/(\"version\": \")[0-9]+\.[0-9]+\.[0-9]+\"/\1$new_version\"/" "$file"
     fi
   else
     echo "Warning: File $file does not exist and was not updated."
