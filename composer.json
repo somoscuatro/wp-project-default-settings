@@ -44,5 +44,8 @@
 			"phpstan/extension-installer": true,
 			"composer/installers": true
 		}
+	},
+	"require": {
+		"zorac/phpstan-php-di": "^1.0"
 	}
 }
