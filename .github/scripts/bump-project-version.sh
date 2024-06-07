@@ -33,6 +33,10 @@ for file in "${files_to_update[@]}"; do
   fi
 done
 
+# Setup git
+git config user.email chore@robot.tech
+git config user.name Chore Robot
+
 # Commit the changes with the provided message
 git add "${files_to_update[@]}"
 git commit -m "chore(🚀): bump project version"
