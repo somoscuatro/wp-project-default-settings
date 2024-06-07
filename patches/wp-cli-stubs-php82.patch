@@ -1,0 +1,61 @@
+--- vendor/php-stubs/wp-cli-stubs/wp-cli-stubs.php	2023-06-02 11:21:15
++++ vendor/php-stubs/wp-cli-stubs/wp-cli-stubs.php	2023-09-01 16:34:51
+@@ -2452,21 +2452,27 @@
+         public function __construct($filename, $delimiter = ',')
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function rewind()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function current()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function key()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function next()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function count()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function valid()
+         {
+         }
+@@ -2520,18 +2526,23 @@
+         private function load_items_from_db()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function current()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function key()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function next()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function rewind()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function valid()
+         {
+         }
+@@ -6298,4 +6309,4 @@
+     function get_cache_dir()
+     {
+     }
+-}
+\ No newline at end of file
++}

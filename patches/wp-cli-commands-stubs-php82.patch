@@ -1,0 +1,41 @@
+--- vendor/php-stubs/wp-cli-stubs/wp-cli-commands-stubs.php	2023-06-02 11:21:15
++++ vendor/php-stubs/wp-cli-stubs/wp-cli-commands-stubs.php	2023-09-01 16:34:51
+@@ -10660,6 +10660,7 @@
+         public function __construct($iterator, $callback)
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function current()
+         {
+         }
+@@ -10673,18 +10674,23 @@
+         public function __construct($post_ids, $limit = \null)
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function current()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function key()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function next()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function rewind()
+         {
+         }
++        #[\ReturnTypeWillChange]
+         public function valid()
+         {
+         }
+@@ -16808,4 +16814,4 @@
+         {
+         }
+     }
+-}
+\ No newline at end of file
++}
