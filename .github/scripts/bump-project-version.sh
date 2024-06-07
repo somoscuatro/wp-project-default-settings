@@ -12,7 +12,13 @@ fi
 echo "v$new_version" >.github/.version
 
 # Define the files to update
-files_to_update=("composer.json" "package.json" "style.css")
+files_to_update=(
+  "composer.json"
+  "package.json"
+  "wp-content/themes/sc-starter-theme/style.css",
+  "wp-content/themes/sc-starter-theme/composer.json",
+  "wp-content/themes/sc-starter-theme/package.json"
+)
 
 # Loop through the files and update the version
 for file in "${files_to_update[@]}"; do
