@@ -15,8 +15,8 @@ echo "v$new_version" >.github/.version
 files_to_update=(
   "composer.json"
   "package.json"
-  "wp-content/themes/sc-starter-theme/style.css",
-  "wp-content/themes/sc-starter-theme/composer.json",
+  "wp-content/themes/sc-starter-theme/style.css"
+  "wp-content/themes/sc-starter-theme/composer.json"
   "wp-content/themes/sc-starter-theme/package.json"
 )
 
