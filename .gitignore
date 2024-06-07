@@ -1,0 +1,85 @@
+# Dist folders
+wp-content/themes/sc-starter-theme/dist
+wp-content/themes/sc-starter-theme/src/blocks/**/fields.json
+
+# WordPress
+/wp-config.php
+/wp-content/uploads/*
+!/wp-content/uploads/.htaccess
+
+# WordPress development plugins
+*/plugins/mailhog/
+*/plugins/disable-emails/
+*/plugins/woocommerce-email-test/
+*/plugins/query-monitor/
+
+# Ignore these WordPress plugins from the core
+*/plugins/hello.php
+*/plugins/akismet/
+
+# Ignore specific WordPress themes
+*/themes/twenty*/
+*/themes/storefront*/
+
+# Ignore cache files
+/wp-content/litespeed/
+/wp-content/cache/
+/wp-content/autoptimize_404_handler.php
+
+# Plugin ewww-image-optimizer
+/wp-content/ewww/
+
+# Plugin webp-express
+/wp-content/webp-express/
+/wp-content/themes/.htaccess
+/wp-content/uploads/.htaccess
+
+# Env
+.env*
+!.env.example
+
+# Dependencies
+/vendor
+/wp-content/themes/sc-starter-theme/vendor
+node_modules/
+
+# SQL dumps
+*.sql
+*.sqlite
+
+# Logs
+*.log
+*/debug.log
+php_errorlog
+
+# OS
+*.url
+*.lnk
+.DS*
+
+# Git
+.project
+.idea/
+.well-known
+/tags
+
+# Patch/diff artifacts
+*.diff
+*.orig
+*.rej
+interdiff*.txt
+
+# VS Code
+*code-workspace
+
+# VIM
+*.un~
+Session.vim
+.netrwhist
+*~
+*.swp
+.lvimrc
+
+# emacs artifacts
+*~
+\#*\#

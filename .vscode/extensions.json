@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "bmewburn.vscode-intelephense-client",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "joffreykern.markdown-toc",
+    "johnbillion.vscode-wordpress-hooks",
+    "ms-azuretools.vscode-docker",
+    "neilbrayfield.php-docblocker",
+    "stylelint.vscode-stylelint",
+    "valeryanm.vscode-phpsab",
+    "xabikos.JavaScriptSnippets",
+    "xdebug.php-debug",
+    "yzhang.markdown-all-in-one",
+    "heybourn.headwind"
+  ]
+}
