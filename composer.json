@@ -1,12 +1,12 @@
 {
-	"name": "author/your-project",
+	"name": "author-name/your-project",
 	"description": "project-description",
 	"version": "1.0.0",
 	"authors": [
 		{
-			"name": "author",
 			"homepage": "author-url",
 			"email": "author-email"
+			"name": "author-name",
 		}
 	],
 	"minimum-stability": "dev",

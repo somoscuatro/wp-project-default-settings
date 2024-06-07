@@ -1,9 +1,9 @@
 {
-	"name": "@author/your-project",
+	"name": "@author-name/your-project",
 	"description": "project-description",
 	"version": "1.0.0",
 	"author": {
-		"name": "author",
+		"name": "author-name",
 		"email": "author-email",
 		"url": "author-url"
 	},
