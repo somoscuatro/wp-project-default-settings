@@ -39,6 +39,7 @@ wp-content/themes/sc-starter-theme/src/blocks/**/fields.json
 !.env.example
 
 # Dependencies
+.pnpm-store
 /vendor
 /wp-content/themes/sc-starter-theme/vendor
 node_modules/
