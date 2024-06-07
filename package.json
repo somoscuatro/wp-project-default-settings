@@ -25,7 +25,9 @@
 		"lint-fix:css": "stylelint --quiet-deprecation-warnings --fix wp-content/themes/sc-starter-theme/**/*.css",
 		"lint-fix:js": "eslint wp-content/themes/sc-starter-theme/**/*.js --fix",
 		"sniff": "pnpm run sniff:php",
-		"sniff:php": "composer sniff"
+		"sniff:php": "composer sniff",
+		"bump-version": "bash .github/scripts/bump-version.sh",
+		"deploy": "pnpm run bump-version && git push origin main && git push origin --tags && bash .github/scripts/create-release-notes.sh && gh release create \"$(<.github/.version)\" --title \"$(<.github/.version)\" --notes \"$(<.github/.release-notes)\""
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.2.1",
