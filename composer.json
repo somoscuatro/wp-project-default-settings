@@ -18,7 +18,7 @@
 		"post-install-cmd": [
 			"patch -N ./vendor/php-stubs/wp-cli-stubs/wp-cli-stubs.php < ./patches/wp-cli-stubs-php82.patch || true",
 			"patch -N ./vendor/php-stubs/wp-cli-stubs/wp-cli-commands-stubs.php < ./patches/wp-cli-commands-stubs-php82.patch || true",
-			"vendor/bin/generate-stubs wp-content/themes/sc-starter-theme/vendor/timber --out=vendor/php-stubs/timber-stubs/timber-stubs.php --force"
+			"vendor/bin/generate-stubs ./vendor/timber --out=vendor/php-stubs/timber-stubs/timber-stubs.php --force"
 		]
 	},
 	"require-dev": {
